@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../style.css" />
 
     <title>Space Tourism Website</title>
-    <script src="../script.js" defer></script>
+    <script type="module" src="../script.js" defer></script>
   </head>
   <body class="destination">
     <header class="primary-header flex">
@@ -73,7 +73,12 @@
 
       <picture>
         <source srcset="assets/destination/image-moon.webp" type="image/webp" />
-        <img src="assets/destination/image-moon.png" alt="the moon" />
+        <img
+          id="png"
+          class="png"
+          src="assets/destination/image-moon.png"
+          alt="the moon"
+        />
       </picture>
 
       <!-- <picture hidden>
@@ -103,34 +108,34 @@
       <div class="tab-list underline-indicators flex">
         <button
           aria-selected="true"
-          class="uppercase ff-sans-cond text-accent letter-spacing-2"
+          class="moon-tab uppercase ff-sans-cond text-accent letter-spacing-2"
         >
           Moon
         </button>
         <button
           aria-selected="false"
-          class="uppercase ff-sans-cond text-accent letter-spacing-2"
+          class="mars-tab uppercase ff-sans-cond text-accent letter-spacing-2"
         >
           Mars
         </button>
         <button
           aria-selected="false"
-          class="uppercase ff-sans-cond text-accent letter-spacing-2"
+          class="europa-tab uppercase ff-sans-cond text-accent letter-spacing-2"
         >
           Europa
         </button>
         <button
           aria-selected="false"
-          class="uppercase ff-sans-cond text-accent letter-spacing-2"
+          class="titan-tab uppercase ff-sans-cond text-accent letter-spacing-2"
         >
           Titan
         </button>
       </div>
 
       <article class="destination-info flow">
-        <h2 class="fs-800 uppercase ff-serif">Moon</h2>
+        <h2 class="name fs-800 uppercase ff-serif">Moon</h2>
 
-        <p>
+        <p class="description">
           See our planet as you've never seen it before. A perfect relaxing trip
           away to help regain perspective and come back refreshed. While you're
           there, take in some history by visiting the Luna 2 and Apollo 11
@@ -140,11 +145,11 @@
         <div class="destination-meta flex">
           <div>
             <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
-            <p class="ff-serif uppercase">384,400 km</p>
+            <p class="distance ff-serif uppercase">384,400 km</p>
           </div>
           <div>
             <h3 class="text-accent fs-200 uppercase">Est. travel time</h3>
-            <p class="ff-serif uppercase">3 days</p>
+            <p class="travel ff-serif uppercase">3 days</p>
           </div>
         </div>
       </article>
