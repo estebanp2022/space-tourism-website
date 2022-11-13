@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../style.css" />
 
     <title>Space Tourism Website</title>
-    <script type="module" src="../script.js" defer></script>
   </head>
   <body class="crew">
     <header class="primary-header flex">
@@ -34,7 +33,7 @@
           data-visible="false"
           class="primary-navigation underline-indicators flex"
         >
-          <li class="active">
+          <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="index.html"
@@ -48,7 +47,7 @@
               ><span aria-hidden="true">01</span>Destination</a
             >
           </li>
-          <li>
+          <li class="active">
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="crew.html"
@@ -71,32 +70,32 @@
         <span aria-hidden="true">02</span> Meet your crew
       </h1>
       <div class="dot-indicators flex">
-        <button aria-selected="true">
-          <span class="sr-only">The commander</span>
+        <button class="commander-btn" aria-selected="true">
+          <!-- <span class="commander sr-only">The commander</span> -->
         </button>
-        <button aria-selected="false">
-          <span class="sr-only">The mission specialist</span>
+        <button class="specialist-btn" aria-selected="false">
+          <!-- <span class="specialist sr-only">The mission specialist</span> -->
         </button>
-        <button aria-selected="false">
-          <span class="sr-only">The pilot</span>
+        <button class="pilot-btn" aria-selected="false">
+          <!-- <span class="pilot sr-only">The pilot</span> -->
         </button>
-        <button aria-selected="false">
-          <span class="sr-only">The crew engineer</span>
+        <button class="engineer-btn" aria-selected="false">
+          <!-- <span class="engineer sr-only">The crew engineer</span> -->
         </button>
       </div>
       <article class="crew-details flow">
         <header class="flow flow--space-small">
-          <h2 class="fs-600 ff-serif uppercase">Commander</h2>
-          <p class="fs-700 uppercase ff-serif">Douglas Hurley</p>
+          <h2 class="crew-role fs-600 ff-serif uppercase">Commander</h2>
+          <p class="crew-name fs-700 uppercase ff-serif">Douglas Hurley</p>
         </header>
-        <p>
+        <p class="crew-bio">
           Douglas Gerald Hurley is an American engineer, former Marine Corps
           pilot and former NASA astronaut. He launched into space for the third
           time as commander of Crew Dragon Demo-2.
         </p>
       </article>
 
-      <picture>
+      <picture class="crew-picture">
         <source
           srcset="assets/crew/image-douglas-hurley.png"
           type="image/webp"
@@ -104,5 +103,6 @@
         <img src="assets/crew/image-douglas-hurley.png" alt="Douglas Hurley" />
       </picture>
     </main>
+    <script type="module" src="../script.js" defer></script>
   </body>
 </html>
