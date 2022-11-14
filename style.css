@@ -730,8 +730,8 @@ body {
 }
 
 .tech-btn {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background-color: var(--clr-dark);
   color: var(--clr-white);
